@@ -1,9 +1,572 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://paintcolorvisualizer.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/cs/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/da/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/hr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/nb/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/pt-BR/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/ro/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/sk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/sv/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/th/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/uk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/zh-CN/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paintcolorvisualizer.app/zh-TW/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://paintcolorvisualizer.app/virtual-paint-room/</loc>
