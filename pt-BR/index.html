@@ -33,6 +33,28 @@
   <link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/">
   <link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/">
   <link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/">
+  <link rel="alternate" hreflang="en" href="https://paintcolorvisualizer.app/">
+  <link rel="alternate" hreflang="cs" href="https://paintcolorvisualizer.app/cs/">
+  <link rel="alternate" hreflang="da" href="https://paintcolorvisualizer.app/da/">
+  <link rel="alternate" hreflang="de" href="https://paintcolorvisualizer.app/de/">
+  <link rel="alternate" hreflang="es" href="https://paintcolorvisualizer.app/es/">
+  <link rel="alternate" hreflang="fr" href="https://paintcolorvisualizer.app/fr/">
+  <link rel="alternate" hreflang="hr" href="https://paintcolorvisualizer.app/hr/">
+  <link rel="alternate" hreflang="it" href="https://paintcolorvisualizer.app/it/">
+  <link rel="alternate" hreflang="ja" href="https://paintcolorvisualizer.app/ja/">
+  <link rel="alternate" hreflang="nb" href="https://paintcolorvisualizer.app/nb/">
+  <link rel="alternate" hreflang="nl" href="https://paintcolorvisualizer.app/nl/">
+  <link rel="alternate" hreflang="pt-BR" href="https://paintcolorvisualizer.app/pt-BR/">
+  <link rel="alternate" hreflang="ro" href="https://paintcolorvisualizer.app/ro/">
+  <link rel="alternate" hreflang="ru" href="https://paintcolorvisualizer.app/ru/">
+  <link rel="alternate" hreflang="sk" href="https://paintcolorvisualizer.app/sk/">
+  <link rel="alternate" hreflang="sv" href="https://paintcolorvisualizer.app/sv/">
+  <link rel="alternate" hreflang="th" href="https://paintcolorvisualizer.app/th/">
+  <link rel="alternate" hreflang="tr" href="https://paintcolorvisualizer.app/tr/">
+  <link rel="alternate" hreflang="uk" href="https://paintcolorvisualizer.app/uk/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://paintcolorvisualizer.app/zh-CN/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://paintcolorvisualizer.app/zh-TW/">
+  <link rel="alternate" hreflang="x-default" href="https://paintcolorvisualizer.app/">
     <link rel="icon" href="images/app-icon.png" type="image/png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
@@ -1299,6 +1321,29 @@
             .hero-benefits li { font-size: 0.9rem; text-align: left; }
         }
     
+        /* Language picker dropdown */
+        .lang-picker { position: relative; display: inline-block; }
+        .lang-picker-btn {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 6px 12px; border: 1px solid var(--border-light);
+            border-radius: 8px; background: transparent; color: #57534e;
+            font-size: 0.85rem; font-weight: 500; cursor: pointer;
+            transition: all 0.2s ease; font-family: inherit;
+        }
+        .lang-picker-btn:hover { border-color: var(--primary); color: var(--primary); }
+        .lang-picker-btn .lang-arrow { font-size: 0.65rem; transition: transform 0.2s ease; }
+        .lang-dropdown {
+            position: absolute; top: calc(100% + 4px); right: 0;
+            background: #fff; border: 1px solid var(--border-light);
+            border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            min-width: 160px; max-height: 320px; overflow-y: auto; z-index: 200; display: none;
+        }
+        .lang-dropdown.open { display: block; }
+        .lang-dropdown a { display: block; padding: 8px 16px; font-size: 0.85rem; color: #57534e; text-decoration: none; transition: background 0.15s ease; }
+        .lang-dropdown a:hover { background: rgba(99,102,241,0.08); }
+        .lang-dropdown a.active { color: var(--primary); font-weight: 600; }
+        .lang-picker-mobile { display: none; }
+
   .locale-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem .8rem;padding:1.2rem 0 0;margin-top:1rem;border-top:1px solid #e7e5e4;font-size:.78rem;font-family:system-ui,-apple-system,sans-serif}
   .locale-nav a{color:#78716c;text-decoration:none;transition:color .2s}
   .locale-nav a:hover{color:#1c1917}
