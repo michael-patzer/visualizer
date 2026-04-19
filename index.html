@@ -741,6 +741,117 @@
             line-height: 1.7;
         }
 
+        .compare {
+            padding: 7rem 0;
+            background-color: var(--gallery-white);
+            position: relative;
+        }
+
+        .ba-slider {
+            position: relative;
+            max-width: 960px;
+            margin: 0 auto;
+            border-radius: var(--section-radius);
+            overflow: hidden;
+            box-shadow: var(--gallery-shadow-lg);
+            user-select: none;
+            touch-action: none;
+            aspect-ratio: 4 / 3;
+            background: var(--lavender-soft);
+            cursor: ew-resize;
+            border: 1px solid var(--border-light);
+        }
+
+        .ba-slider img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+            display: block;
+        }
+
+        .ba-slider .ba-after-wrap {
+            position: absolute;
+            inset: 0;
+            width: 50%;
+            overflow: hidden;
+            will-change: width;
+        }
+
+        .ba-slider .ba-after-wrap img {
+            width: 100vw;
+            max-width: 960px;
+        }
+
+        .ba-label {
+            position: absolute;
+            top: 1rem;
+            padding: 0.4rem 0.9rem;
+            background: rgba(26, 26, 46, 0.82);
+            color: #fff;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border-radius: 100px;
+            backdrop-filter: blur(4px);
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        .ba-label-before { left: 1rem; }
+        .ba-label-after { right: 1rem; }
+
+        .ba-handle {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 3px;
+            background: #fff;
+            transform: translateX(-50%);
+            pointer-events: none;
+            z-index: 2;
+            box-shadow: 0 0 0 1px rgba(67, 56, 202, 0.18), 0 0 16px rgba(0, 0, 0, 0.25);
+        }
+
+        .ba-handle::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #fff;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 4px 16px rgba(67, 56, 202, 0.3);
+        }
+
+        .ba-handle::before {
+            content: '\f337\00a0\f336';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--indigo);
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            .compare { padding: 5rem 0; }
+            .ba-slider { aspect-ratio: 3 / 4; }
+            .ba-label { font-size: 0.62rem; padding: 0.3rem 0.65rem; }
+            .ba-handle::after { width: 38px; height: 38px; }
+        }
+
         .screenshots { padding: 7rem 0; background: var(--gallery-white); }
 
         .screenshots-container {
@@ -1445,11 +1556,31 @@
         <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
     </div>
 
+    <!-- Before/After Compare Section -->
+    <section class="compare reveal" id="compare">
+        <div class="container">
+            <div class="section-heading reveal">
+                <div class="section-number" data-i18n="compare_section_label">02 / Compare</div>
+                <h2 data-i18n="compare_heading">Drag to See Before &amp; After</h2>
+                <p data-i18n="compare_subheading">Slide the handle to reveal how a room transforms with Paint Color Visualizer.</p>
+            </div>
+            <div class="ba-slider" id="baSlider">
+                <img src="images/OnboardingBefore.png" data-i18n-alt="compare_alt_before" alt="Room before paint color visualization">
+                <div class="ba-after-wrap" id="baAfterWrap">
+                    <img src="images/OnboardingAfter.png" data-i18n-alt="compare_alt_after" alt="Room after paint color visualization">
+                </div>
+                <span class="ba-label ba-label-before" data-i18n="compare_before">Before</span>
+                <span class="ba-label ba-label-after" data-i18n="compare_after">After</span>
+                <div class="ba-handle" id="baHandle"></div>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
             <div class="section-heading reveal">
-                <div class="section-number" data-i18n="feature_section_label">02 / Features</div>
+                <div class="section-number" data-i18n="feature_section_label">03 / Features</div>
                 <h2 data-i18n="feature_heading">Why Choose Paint Color Visualizer</h2>
                 <p data-i18n="feature_heading_desc">The most advanced paint visualization technology available</p>
             </div>
@@ -1495,7 +1626,7 @@
     <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-heading reveal">
-                <div class="section-number" data-i18n="testimonial_section_label">03 / Reviews</div>
+                <div class="section-number" data-i18n="testimonial_section_label">04 / Reviews</div>
                 <h2 data-i18n="testimonial_heading">What Our Users Say</h2>
                 <p data-i18n="testimonial_heading_desc">Join thousands of homeowners, designers, and contractors who trust Paint Color Visualizer</p>
             </div>
@@ -1552,7 +1683,7 @@
     <section class="screenshots" id="screenshots">
         <div class="container">
             <div class="section-heading reveal">
-                <div class="section-number" data-i18n="screenshots_section_label">04 / Gallery</div>
+                <div class="section-number" data-i18n="screenshots_section_label">05 / Gallery</div>
                 <h2 data-i18n="screenshots_heading">App Screenshots</h2>
                 <p data-i18n="screenshots_heading_desc">See the Paint Color Visualizer in action</p>
             </div>
@@ -1793,6 +1924,43 @@
                 observer.observe(el);
             });
         });
+
+        // Before/After slider
+        (function() {
+            var slider = document.getElementById('baSlider');
+            if (!slider) return;
+            var afterWrap = document.getElementById('baAfterWrap');
+            var handle = document.getElementById('baHandle');
+            var dragging = false;
+
+            function setPosition(clientX) {
+                var rect = slider.getBoundingClientRect();
+                var x = clientX - rect.left;
+                var pct = Math.max(0, Math.min(100, (x / rect.width) * 100));
+                afterWrap.style.width = pct + '%';
+                handle.style.left = pct + '%';
+            }
+
+            function onDown(e) {
+                dragging = true;
+                if (slider.setPointerCapture && e.pointerId !== undefined) {
+                    slider.setPointerCapture(e.pointerId);
+                }
+                setPosition(e.clientX);
+                e.preventDefault();
+            }
+            function onMove(e) {
+                if (!dragging) return;
+                setPosition(e.clientX);
+            }
+            function onUp() { dragging = false; }
+
+            slider.addEventListener('pointerdown', onDown);
+            slider.addEventListener('pointermove', onMove);
+            slider.addEventListener('pointerup', onUp);
+            slider.addEventListener('pointercancel', onUp);
+            slider.addEventListener('pointerleave', onUp);
+        })();
     </script>
     <!-- 100% privacy-first analytics -->
     <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

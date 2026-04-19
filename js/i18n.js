@@ -47,6 +47,12 @@
       if (t[vkey] !== undefined) values[v].value = t[vkey];
     }
 
+    var altEls = document.querySelectorAll('[data-i18n-alt]');
+    for (var al = 0; al < altEls.length; al++) {
+      var alkey = altEls[al].getAttribute('data-i18n-alt');
+      if (t[alkey] !== undefined) altEls[al].setAttribute('alt', t[alkey]);
+    }
+
     var ariaEls = document.querySelectorAll('[data-i18n-aria]');
     for (var a = 0; a < ariaEls.length; a++) {
       var akey = ariaEls[a].getAttribute('data-i18n-aria');
