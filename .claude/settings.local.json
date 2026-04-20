@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:apps.apple.com)",
+      "Bash(curl -s \"https://itunes.apple.com/lookup?id=6745439575&country=us\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); r=d['results'][0]; print\\('screenshotUrls:'\\); [print\\(u\\) for u in r.get\\('screenshotUrls',[]\\)]; print\\('ipadScreenshotUrls:'\\); [print\\(u\\) for u in r.get\\('ipadScreenshotUrls',[]\\)]\")",
+      "Bash(curl -s \"https://itunes.apple.com/lookup?id=6745439575\")",
+      "Bash(python3 -m json.tool)",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/605.1.15 \\(KHTML, like Gecko\\) Version/17.0 Safari/605.1.15\" \"https://apps.apple.com/us/app/paint-color-visualizer/id6745439575\")",
+      "Bash(curl -s -A \"Mozilla/5.0\" \"https://apps.apple.com/us/app/paint-color-visualizer/id6745439575\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(curl *)",
+      "Bash(rm /tmp/update_translations.py /tmp/update_locales.py)",
+      "Bash(python3 -m http.server 8765)",
+      "Bash(pkill -f \"http.server 8765\")",
+      "Bash(rm -f /tmp/server.log)",
+      "Bash(exit 0)",
+      "Read(//tmp/**)",
+      "Bash(rm -f /tmp/indexnow.out)",
+      "Bash(git -C /Users/michaelpatzer/Documents/Work/NewApps/Tools/Website/visualizer log --all --oneline)"
+    ],
+    "defaultMode": "acceptEdits"
+  }
+}
