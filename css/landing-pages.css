@@ -105,6 +105,7 @@ nav a.dl,
   z-index: 10;
   width: 196px;
   padding: 0.9rem;
+  color: var(--ink);
   border-radius: 1rem;
   background: #fff;
   border: 1px solid rgba(28, 25, 23, 0.08);
@@ -113,6 +114,7 @@ nav a.dl,
   visibility: hidden;
   pointer-events: none;
   text-align: center;
+  isolation: isolate;
   transition: opacity 0.24s var(--ease-out), visibility 0.24s var(--ease-out), transform 0.24s var(--ease-out);
 }
 
@@ -130,11 +132,17 @@ nav a.dl,
   display: block;
   width: 168px;
   height: 168px;
-  margin: 0 auto;
+  margin: 0 auto 0.4rem;
   border-radius: 0.75rem;
   background: #fff;
   box-shadow: inset 0 0 0 10px #fff;
   image-rendering: pixelated;
+}
+
+.download-qr p {
+  font-size: 0.82rem;
+  line-height: 1.3;
+  color: var(--ink-secondary);
 }
 
 nav a.dl:hover,

@@ -235,6 +235,7 @@ function renderDownloadButton({ href, label, linkClassName, placement, qrCodeIma
           ${escapeHtml(label)}
           <span class="download-qr" aria-hidden="true">
             <img src="${qrCodeImageUrl}" alt="" width="176" height="176" loading="lazy" decoding="async">
+            <p>Scan to download</p>
           </span>
         </a>`;
 }
