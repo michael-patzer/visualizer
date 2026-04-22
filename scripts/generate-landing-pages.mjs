@@ -231,12 +231,12 @@ function renderAlternateLinks(alternates) {
 }
 
 function renderDownloadButton({ href, label, linkClassName, placement, qrCodeImageUrl }) {
-  return `        <div class="download-cta download-cta--${placement}">
-          <a class="${linkClassName}" href="${href}">${escapeHtml(label)}</a>
+  return `        <a class="${linkClassName} download-link download-link--${placement}" href="${href}">
+          ${escapeHtml(label)}
           <span class="download-qr" aria-hidden="true">
             <img src="${qrCodeImageUrl}" alt="" width="176" height="176" loading="lazy" decoding="async">
           </span>
-        </div>`;
+        </a>`;
 }
 
 function renderHead({ title, description, canonicalUrl, structuredData, lang, alternates }) {
