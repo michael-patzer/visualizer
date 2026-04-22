@@ -95,11 +95,76 @@ nav a.dl,
   transition: background 0.3s var(--ease-out), transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
 }
 
+.download-cta {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.download-qr {
+  display: none;
+}
+
 nav a.dl:hover,
 .btn:hover {
   background: var(--p);
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(var(--p-rgb), 0.25);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .download-qr {
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    border-radius: 1.05rem;
+    background: rgba(255, 255, 255, 0.97);
+    border: 1px solid rgba(var(--p-rgb), 0.14);
+    box-shadow: 0 24px 60px rgba(28, 25, 23, 0.16), 0 10px 28px rgba(28, 25, 23, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.28s var(--ease-out), visibility 0.28s var(--ease-out), transform 0.28s var(--ease-out);
+  }
+
+  .download-qr img {
+    display: block;
+    width: 176px;
+    height: 176px;
+    border-radius: 0.7rem;
+  }
+
+  .download-cta--nav .download-qr {
+    top: calc(100% + 0.85rem);
+    right: 0;
+    transform: translateY(-10px) scale(0.96);
+  }
+
+  .download-cta--cta .download-qr {
+    bottom: calc(100% + 1rem);
+    left: 50%;
+    transform: translate(-50%, 10px) scale(0.96);
+  }
+
+  .download-cta:hover .download-qr,
+  .download-cta:focus-within .download-qr {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .download-cta--nav:hover .download-qr,
+  .download-cta--nav:focus-within .download-qr {
+    transform: translateY(0) scale(1);
+  }
+
+  .download-cta--cta:hover .download-qr,
+  .download-cta--cta:focus-within .download-qr {
+    transform: translate(-50%, 0) scale(1);
+  }
 }
 
 .hero {
@@ -359,15 +424,20 @@ h2::after {
   padding: 4rem 2.5rem;
   text-align: center;
   margin: 3.5rem 0 0 -2rem;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .cta::before {
   content: "";
   position: absolute;
   inset: 0;
+  border-radius: inherit;
   background: linear-gradient(135deg, rgba(var(--p-rgb), 0.12) 0%, transparent 50%, rgba(var(--p-rgb), 0.06) 100%);
   pointer-events: none;
+}
+
+.cta::after {
+  border-radius: inherit;
 }
 
 .cta h2 {

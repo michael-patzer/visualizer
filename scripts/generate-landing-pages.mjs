@@ -138,6 +138,14 @@ function localeGuidesUrl(locale) {
   return isDefaultLocale(locale) ? `${APP.baseUrl}/guides/` : `${APP.baseUrl}/${locale.path}/guides/`;
 }
 
+function getAppStoreUrl(campaignType) {
+  if (!campaignType) return APP.appStoreUrl;
+
+  const url = new URL(APP.appStoreUrl);
+  url.searchParams.set("ct", campaignType);
+  return url.toString();
+}
+
 function pageUrl(page, locale) {
   return isDefaultLocale(locale)
     ? `${APP.baseUrl}/${page.slug}/`
@@ -163,6 +171,33 @@ function getKeyword(page, locale) {
 
 function getDisplayKeyword(page, locale) {
   return capitalize(getKeyword(page, locale));
+}
+
+function slugifyCampaignPart(value) {
+  return String(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function getLandingPageSlug(locale, slug) {
+  const parts = [];
+  if (!isDefaultLocale(locale)) parts.push(locale.path);
+  parts.push(slug);
+  return parts.map(slugifyCampaignPart).filter(Boolean).join("-");
+}
+
+function getQrCampaignType(locale, slug) {
+  return `QRCode-${getLandingPageSlug(locale, slug)}`;
+}
+
+function getQrCodeImageUrl(campaignType) {
+  const url = new URL("https://api.qrserver.com/v1/create-qr-code/");
+  url.searchParams.set("size", "176x176");
+  url.searchParams.set("format", "svg");
+  url.searchParams.set("margin", "0");
+  url.searchParams.set("data", getAppStoreUrl(campaignType));
+  return url.toString();
 }
 
 function getAlternatesForPage(page) {
@@ -193,6 +228,15 @@ function renderAlternateLinks(alternates) {
         `<link rel="alternate" hreflang="${alternate.hreflang}" href="${alternate.href}">`
     )
     .join("\n  ");
+}
+
+function renderDownloadButton({ href, label, linkClassName, placement, qrCodeImageUrl }) {
+  return `        <div class="download-cta download-cta--${placement}">
+          <a class="${linkClassName}" href="${href}">${escapeHtml(label)}</a>
+          <span class="download-qr" aria-hidden="true">
+            <img src="${qrCodeImageUrl}" alt="" width="176" height="176" loading="lazy" decoding="async">
+          </span>
+        </div>`;
 }
 
 function renderHead({ title, description, canonicalUrl, structuredData, lang, alternates }) {
@@ -470,6 +514,8 @@ function getRelatedPages(page, limit = 4) {
 
 function renderEnglishPage(page) {
   const canonicalUrl = pageUrl(page, HOME_LOCALES[0]);
+  const appStoreUrl = getAppStoreUrl();
+  const qrCodeImageUrl = getQrCodeImageUrl(getQrCampaignType(HOME_LOCALES[0], page.slug));
   const structuredData = {
     "@context": "https://schema.org",
     "@type": ["SoftwareApplication", "MobileApplication"],
@@ -477,7 +523,7 @@ function renderEnglishPage(page) {
     operatingSystem: "iOS",
     applicationCategory: "UtilitiesApplication",
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-    downloadUrl: APP.appStoreUrl,
+    downloadUrl: appStoreUrl,
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.5", reviewCount: "60" },
   };
   const relatedPages = getRelatedPages(page);
@@ -495,7 +541,13 @@ function renderEnglishPage(page) {
     <a class="home" href="${localeHomeUrl(HOME_LOCALES[0])}">${APP.name}</a>
     <div class="nav-actions">
       <a class="nav-link" href="${localeGuidesUrl(HOME_LOCALES[0])}">${ENGLISH_COPY.guides}</a>
-      <a class="dl" href="${APP.appStoreUrl}">${ENGLISH_COPY.download}</a>
+${renderDownloadButton({
+  href: appStoreUrl,
+  label: ENGLISH_COPY.download,
+  linkClassName: "dl",
+  placement: "nav",
+  qrCodeImageUrl,
+})}
     </div>
   </nav>
   <div class="hero">
@@ -536,7 +588,13 @@ ${relatedPages
       <div class="cta fade-in">
         <h2>${escapeHtml(page.cardTitle)} for your real home</h2>
         <p>${ENGLISH_COPY.cta}</p>
-        <a class="btn" href="${APP.appStoreUrl}">Download on the App Store - Free</a>
+${renderDownloadButton({
+  href: appStoreUrl,
+  label: "Download on the App Store - Free",
+  linkClassName: "btn",
+  placement: "cta",
+  qrCodeImageUrl,
+})}
       </div>
     </main>
   </div>
@@ -558,6 +616,8 @@ function renderLocalizedPage(page, locale) {
   const keyword = getKeyword(page, locale);
   const displayKeyword = getDisplayKeyword(page, locale);
   const relatedPages = getRelatedPages(page);
+  const appStoreUrl = getAppStoreUrl();
+  const qrCodeImageUrl = getQrCodeImageUrl(getQrCampaignType(locale, page.slug));
   const structuredData = {
     "@context": "https://schema.org",
     "@type": ["SoftwareApplication", "MobileApplication"],
@@ -565,7 +625,7 @@ function renderLocalizedPage(page, locale) {
     operatingSystem: "iOS",
     applicationCategory: "UtilitiesApplication",
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-    downloadUrl: APP.appStoreUrl,
+    downloadUrl: appStoreUrl,
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.5", reviewCount: "60" },
     inLanguage: copy.lang,
   };
@@ -583,7 +643,13 @@ function renderLocalizedPage(page, locale) {
     <a class="home" href="${localeHomeUrl(locale)}">${APP.name}</a>
     <div class="nav-actions">
       <a class="nav-link" href="${localeGuidesUrl(locale)}">${copy.guides}</a>
-      <a class="dl" href="${APP.appStoreUrl}">${copy.download}</a>
+${renderDownloadButton({
+  href: appStoreUrl,
+  label: copy.download,
+  linkClassName: "dl",
+  placement: "nav",
+  qrCodeImageUrl,
+})}
     </div>
   </nav>
   <div class="hero">
@@ -624,7 +690,13 @@ ${relatedPages
       <div class="cta fade-in">
         <h2>${escapeHtml(displayKeyword)}</h2>
         <p>${copy.cta}</p>
-        <a class="btn" href="${APP.appStoreUrl}">${copy.download}</a>
+${renderDownloadButton({
+  href: appStoreUrl,
+  label: copy.download,
+  linkClassName: "btn",
+  placement: "cta",
+  qrCodeImageUrl,
+})}
       </div>
     </main>
   </div>
@@ -643,6 +715,8 @@ ${relatedPages
 function renderHub(locale) {
   const copy = getLocaleCopy(locale);
   const canonicalUrl = localeGuidesUrl(locale);
+  const appStoreUrl = getAppStoreUrl();
+  const qrCodeImageUrl = getQrCodeImageUrl(getQrCampaignType(locale, "guides"));
   const groupedSections = HUB_SECTIONS.map((section) => ({
     slug: section.slug,
     pages: PAGES.filter((page) => page.group === section.slug),
@@ -670,7 +744,13 @@ function renderHub(locale) {
     <a class="home" href="${localeHomeUrl(locale)}">${APP.name}</a>
     <div class="nav-actions">
       <a class="nav-link" href="${localeHomeUrl(locale)}">${copy.home}</a>
-      <a class="dl" href="${APP.appStoreUrl}">${copy.download}</a>
+${renderDownloadButton({
+  href: appStoreUrl,
+  label: copy.download,
+  linkClassName: "dl",
+  placement: "nav",
+  qrCodeImageUrl,
+})}
     </div>
   </nav>
   <div class="hero">
@@ -705,7 +785,13 @@ ${section.pages
       <div class="cta fade-in">
         <h2>${escapeHtml(copy.hubCtaTitle)}</h2>
         <p>${escapeHtml(copy.hubCtaBody)}</p>
-        <a class="btn" href="${APP.appStoreUrl}">${copy.download}</a>
+${renderDownloadButton({
+  href: appStoreUrl,
+  label: copy.download,
+  linkClassName: "btn",
+  placement: "cta",
+  qrCodeImageUrl,
+})}
       </div>
     </main>
   </div>
