@@ -3,7 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { APP, HOME_LOCALES, HUB_SECTIONS, PAGES } from "../seo/landing-pages.mjs";
-import { LANDING_COPY, KEYWORD_TRANSLATIONS } from "../seo/landing-locales.mjs";
+import { FAQ_QUESTIONS, LANDING_COPY, KEYWORD_TRANSLATIONS } from "../seo/landing-locales.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -95,6 +95,28 @@ const ENGLISH_COPY = {
   card: "Preview this idea on your own photo with real paint brands.",
 };
 
+const ENGLISH_FAQ_COPY = {
+  heading: "Frequently asked questions",
+  intro:
+    "Short answers to the questions people usually ask before choosing a paint visualizer app.",
+  brandAnswer:
+    "Paint Color Visualizer supports real paint libraries from Sherwin-Williams, Benjamin Moore, Behr, Valspar, and other major brands.",
+  questions: {
+    ownPhoto: "Can I use {keyword} with my own photo?",
+    accuracy: "How accurate is the paint preview?",
+    brands: "Which paint brands can I compare?",
+    ai: "How does AI help with paint visualization?",
+    samples: "Should I still buy paint samples?",
+    exterior: "Can I preview exterior paint colors?",
+    saveShare: "Can I save and share paint color versions?",
+    photoTips: "What kind of photo works best?",
+    brandOnly: "Is this better than a brand-only paint visualizer?",
+    iphone: "Does Paint Color Visualizer work on iPhone?",
+    room: "Can I see one room in several colors?",
+    cabinetsTrim: "Can I preview cabinets, trim, ceilings, or doors?",
+  },
+};
+
 function escapeHtml(value) {
   return String(value)
     .replace(/&/g, "&amp;")
@@ -124,6 +146,10 @@ function localeHrefLang(code) {
 
 function getLocaleCopy(locale) {
   return locale.code === "en" ? ENGLISH_COPY : LANDING_COPY[locale.code];
+}
+
+function getFaqCopy(locale) {
+  return locale.code === "en" ? ENGLISH_FAQ_COPY : FAQ_QUESTIONS[locale.code] ?? ENGLISH_FAQ_COPY;
 }
 
 function isDefaultLocale(locale) {
@@ -238,6 +264,166 @@ function renderDownloadButton({ href, label, linkClassName, placement, qrCodeIma
             <p>Scan to download</p>
           </span>
         </a>`;
+}
+
+function renderFaqSection(faqItems, faqCopy) {
+  if (!faqItems.length) return "";
+
+  return `      <section class="faq-section fade-in">
+        <div class="faq-heading">
+          <h2>${escapeHtml(faqCopy.heading)}</h2>
+          <p>${escapeHtml(faqCopy.intro)}</p>
+        </div>
+        <div class="faq-list">
+${faqItems
+  .map(
+    (item) => `          <article class="faq-item">
+            <h3>${escapeHtml(item.question)}</h3>
+            <p>${escapeHtml(item.answer)}</p>
+          </article>`
+  )
+  .join("\n")}
+        </div>
+      </section>`;
+}
+
+function getDirectAnswer(page, locale) {
+  if (isDefaultLocale(locale)) {
+    return `Yes. ${APP.name} lets you ${page.searchIntent} by using your own room or house photo, selecting paintable surfaces, and comparing real paint colors from major brands.`;
+  }
+
+  const copy = getLocaleCopy(locale);
+  let workflow = copy.s3b;
+
+  if (page.kind === "brand") workflow = fill(copy.s3brand, { brand: page.brand });
+  if (page.kind === "exterior" || page.tags.includes("exterior")) workflow = copy.s3exterior;
+  if (page.kind === "ai") workflow = copy.s3ai;
+
+  return `${copy.s1b} ${workflow}`;
+}
+
+function renderAnswerSection(answer) {
+  return `      <section class="answer-section fade-in" aria-label="Short answer">
+        <p>${escapeHtml(answer)}</p>
+      </section>`;
+}
+
+function getFaqTopicKeys(page) {
+  const topics = ["ownPhoto"];
+
+  if (page.kind === "brand") topics.push("brands", "brandOnly");
+  if (page.kind === "best") topics.push("brandOnly", "brands");
+  if (page.kind === "ai") topics.push("ai");
+  if (page.kind === "exterior" || page.tags.includes("exterior")) topics.push("exterior");
+  if (page.kind === "room" || page.tags.includes("living-room")) topics.push("room");
+  if (page.kind === "app") topics.push("iphone");
+  if (page.tags.includes("interior") || page.tags.includes("room")) topics.push("cabinetsTrim");
+
+  topics.push("accuracy", "photoTips", "saveShare", "samples");
+
+  return [...new Set(topics)].slice(0, 5);
+}
+
+function getFaqAnswer(topic, page, locale, copy) {
+  const keyword = getKeyword(page, locale);
+  const displayKeyword = getDisplayKeyword(page, locale);
+  const brandAnswer = getFaqCopy(locale).brandAnswer;
+
+  if (isDefaultLocale(locale)) {
+    switch (topic) {
+      case "ownPhoto":
+        return `Yes. ${APP.name} lets you upload your own room or house photo, select paintable surfaces, and test real paint colors on the image you actually care about.`;
+      case "accuracy":
+        return "The preview is best for narrowing a shortlist, not replacing a final physical sample. It preserves the original photo's light and shadows, but screens, bulbs, daylight, and paint finish can still change the final result.";
+      case "brands":
+        return `${brandAnswer} That makes it easier to compare similar colors without switching between separate brand tools.`;
+      case "ai":
+        return "AI helps identify paintable areas faster, including walls, trim, cabinets, doors, ceilings, and exterior details. You can still refine the selected surfaces before comparing colors.";
+      case "samples":
+        return "Usually, yes. Use the app to eliminate weak options first, then buy samples only for the strongest finalists you want to test in real light.";
+      case "exterior":
+        return "Yes. You can use exterior photos to preview siding, trim, shutters, doors, and accent details before committing to a large repaint.";
+      case "saveShare":
+        return "Yes. Save multiple versions of the same photo so you can compare them later or share the strongest options with a partner, designer, contractor, or client.";
+      case "photoTips":
+        return "Use a clear, well-lit photo taken straight-on when possible. Natural light, visible wall edges, and less clutter make the preview easier to judge.";
+      case "brandOnly":
+        return "Brand visualizers are useful inside one catalog. Paint Color Visualizer is stronger when you want to compare multiple brands on the same real room or house photo.";
+      case "iphone":
+        return "Yes. Paint Color Visualizer is available for iPhone and iPad from the App Store.";
+      case "room":
+        return "Yes. You can save several versions of the same room photo, which makes it easier to compare light neutrals, deeper accent colors, and completely different color families.";
+      case "cabinetsTrim":
+        return "Yes. Use the app to preview different paintable surfaces such as walls, trim, ceilings, cabinets, doors, shutters, and siding depending on the photo.";
+      default:
+        return `${displayKeyword} works best when you use a real photo, compare several color options, and keep the final choice grounded in your own lighting.`;
+    }
+  }
+
+  switch (topic) {
+    case "ownPhoto":
+      return `${copy.s1b} ${copy.s2b}`;
+    case "accuracy":
+      return `${copy.s2b} ${copy.s4l}`;
+    case "brands":
+      return `${brandAnswer} ${page.kind === "brand" ? fill(copy.s3brand, { brand: page.brand }) : copy.s3b}`;
+    case "ai":
+      return copy.s3ai;
+    case "samples":
+      return `${copy.s4l} ${copy.s4b}`;
+    case "exterior":
+      return copy.s3exterior;
+    case "saveShare":
+      return copy.s4b;
+    case "photoTips":
+      return copy.s2b;
+    case "brandOnly":
+      return page.kind === "brand" ? fill(copy.s3brand, { brand: page.brand }) : copy.s3b;
+    case "iphone":
+      return `${copy.badge}. ${copy.cta}`;
+    case "room":
+      return `${copy.s1b} ${copy.s3b}`;
+    case "cabinetsTrim":
+      return page.kind === "exterior" ? copy.s3exterior : copy.s3b;
+    default:
+      return `${displayKeyword}: ${copy.s4b}`;
+  }
+}
+
+function buildFaqItems(page, locale) {
+  const copy = getLocaleCopy(locale);
+  const faqCopy = getFaqCopy(locale);
+  const values = {
+    keyword: getKeyword(page, locale),
+    brand: page.brand ?? "",
+    appName: APP.name,
+  };
+
+  return getFaqTopicKeys(page).map((topic) => ({
+    topic,
+    question: fill(faqCopy.questions[topic] ?? ENGLISH_FAQ_COPY.questions[topic], {
+      ...values,
+      keyword: topic === "ownPhoto" ? APP.name : values.keyword,
+    }),
+    answer: getFaqAnswer(topic, page, locale, copy),
+  }));
+}
+
+function buildFaqStructuredData(faqItems, canonicalUrl, locale) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${canonicalUrl}#faq`,
+    inLanguage: getLocaleCopy(locale).lang,
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
 }
 
 function renderHead({ title, description, canonicalUrl, structuredData, lang, alternates }) {
@@ -517,7 +703,11 @@ function renderEnglishPage(page) {
   const canonicalUrl = pageUrl(page, HOME_LOCALES[0]);
   const appStoreUrl = getAppStoreUrl();
   const qrCodeImageUrl = getQrCodeImageUrl(getQrCampaignType(HOME_LOCALES[0], page.slug));
-  const structuredData = {
+  const locale = HOME_LOCALES[0];
+  const faqItems = buildFaqItems(page, locale);
+  const faqCopy = getFaqCopy(locale);
+  const directAnswer = getDirectAnswer(page, locale);
+  const appStructuredData = {
     "@context": "https://schema.org",
     "@type": ["SoftwareApplication", "MobileApplication"],
     name: APP.name,
@@ -527,6 +717,7 @@ function renderEnglishPage(page) {
     downloadUrl: appStoreUrl,
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.5", reviewCount: "60" },
   };
+  const structuredData = [appStructuredData, buildFaqStructuredData(faqItems, canonicalUrl, locale)];
   const relatedPages = getRelatedPages(page);
 
   return `${renderHead({
@@ -558,6 +749,7 @@ ${renderDownloadButton({
   </div>
   <div class="ed-main">
     <main>
+${renderAnswerSection(directAnswer)}
 ${buildEnglishSections(page)
   .map(
     (section, index) => `      <section class="ed-section fade-section">
@@ -572,6 +764,7 @@ ${buildEnglishSections(page)
       </section>`
   )
   .join("\n")}
+${renderFaqSection(faqItems, faqCopy)}
       <section class="related-links fade-in">
         <h2>${ENGLISH_COPY.related}</h2>
         <div class="related-grid">
@@ -619,7 +812,10 @@ function renderLocalizedPage(page, locale) {
   const relatedPages = getRelatedPages(page);
   const appStoreUrl = getAppStoreUrl();
   const qrCodeImageUrl = getQrCodeImageUrl(getQrCampaignType(locale, page.slug));
-  const structuredData = {
+  const faqItems = buildFaqItems(page, locale);
+  const faqCopy = getFaqCopy(locale);
+  const directAnswer = getDirectAnswer(page, locale);
+  const appStructuredData = {
     "@context": "https://schema.org",
     "@type": ["SoftwareApplication", "MobileApplication"],
     name: APP.name,
@@ -630,6 +826,7 @@ function renderLocalizedPage(page, locale) {
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.5", reviewCount: "60" },
     inLanguage: copy.lang,
   };
+  const structuredData = [appStructuredData, buildFaqStructuredData(faqItems, canonicalUrl, locale)];
 
   return `${renderHead({
     title: `${displayKeyword} | ${APP.name}`,
@@ -660,6 +857,7 @@ ${renderDownloadButton({
   </div>
   <div class="ed-main">
     <main>
+${renderAnswerSection(directAnswer)}
 ${buildLocalizedSections(page, locale)
   .map(
     (section, index) => `      <section class="ed-section fade-section">
@@ -674,6 +872,7 @@ ${buildLocalizedSections(page, locale)
       </section>`
   )
   .join("\n")}
+${renderFaqSection(faqItems, faqCopy)}
       <section class="related-links fade-in">
         <h2>${copy.related}</h2>
         <div class="related-grid">

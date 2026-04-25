@@ -370,6 +370,22 @@ h2::after {
   margin-top: 0.9rem;
 }
 
+.answer-section {
+  padding: 2.5rem 0 0 2.5rem;
+}
+
+.answer-section p {
+  background: rgba(var(--p-rgb), 0.08);
+  border: 1px solid rgba(var(--p-rgb), 0.18);
+  border-left: 4px solid rgba(var(--p-rgb), 0.55);
+  border-radius: 0.85rem;
+  color: var(--ink);
+  font-size: 1.12rem;
+  line-height: 1.75;
+  margin: 0;
+  padding: 1.2rem 1.35rem;
+}
+
 .ed-lead {
   font-size: 1.12rem;
   color: var(--ink);
@@ -377,6 +393,53 @@ h2::after {
   border-left: 3px solid rgba(var(--p-rgb), 0.35);
   padding-left: 1.2rem;
   margin-bottom: 1.1rem;
+}
+
+.faq-section {
+  padding: 3rem 0 0 2.5rem;
+}
+
+.faq-heading {
+  margin-bottom: 1.25rem;
+}
+
+.faq-heading h2 {
+  margin-bottom: 0.65rem;
+}
+
+.faq-heading h2::after {
+  display: none;
+}
+
+.faq-heading p {
+  color: var(--ink-secondary);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.faq-item {
+  border: 1px solid var(--rule);
+  border-radius: 0.85rem;
+  background: var(--surface);
+  padding: 1.15rem 1.2rem;
+}
+
+.faq-item h3 {
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.45;
+  margin-bottom: 0.45rem;
+}
+
+.faq-item p {
+  color: var(--ink-secondary);
+  font-size: 0.98rem;
+  line-height: 1.75;
 }
 
 .related-links {
@@ -643,7 +706,9 @@ footer a:hover {
     margin-left: 1.5rem;
   }
 
+  .answer-section,
   .ed-section-inner,
+  .faq-section,
   .related-links {
     padding-left: 1.5rem;
   }
